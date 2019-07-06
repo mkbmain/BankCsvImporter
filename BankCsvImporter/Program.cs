@@ -9,6 +9,7 @@ using CsvBankImporterLib.Wrappers;
 namespace BankCsvImporter
 {
     // please note this is not a program more a actual test of what you can do as in get rows back show break down etc you could then put in db etc
+    // hence why its not tested 
     class Program
     {
         private static CsvBankImporter[] _importers;
