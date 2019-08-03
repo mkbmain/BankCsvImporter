@@ -16,6 +16,8 @@ namespace BankCsvImporter
 
         static Program()
         {
+            // could optimise this to only load one in real time when a folder with files is discovered but meh
+
             // with out auto fac
             //  _importers = GetNonAbstractClassesOfTypes<CsvBankImporter>(new FileWrapper(), new CsvSplitterAndStripper()).ToArray();
 
