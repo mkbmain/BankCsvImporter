@@ -11,9 +11,9 @@ namespace CsvBankImporterLib
         protected readonly IFileWrapper FileWrapper;
         protected readonly ICsvSplitterAndStripper CsvSplitterAndStripper;
 
-        public  string PathICanSupport = "NotImplemented";
-        
-        protected CsvBankImporter(IFileWrapper fileWrapper,ICsvSplitterAndStripper csvSplitterAndStripper)
+        public string PathICanSupport = "NotImplemented";
+
+        public CsvBankImporter(IFileWrapper fileWrapper, ICsvSplitterAndStripper csvSplitterAndStripper)
         {
             FileWrapper = fileWrapper;
             CsvSplitterAndStripper = csvSplitterAndStripper;
@@ -21,7 +21,7 @@ namespace CsvBankImporterLib
 
         public virtual IEnumerable<StandardBankOutputModel> Import(string path)
         {
-            throw  new NotImplementedException();
+            throw new NotImplementedException();
         }
     }
 }
