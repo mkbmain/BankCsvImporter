@@ -5,8 +5,6 @@ using Autofac;
 using BankCsvImporter.IoC;
 using CsvBankImporterLib;
 using CsvBankImporterLib.Models;
-using CsvBankImporterLib.Service;
-using CsvBankImporterLib.Wrappers;
 
 namespace BankCsvImporter
 {
@@ -18,10 +16,13 @@ namespace BankCsvImporter
 
         static void Main(string[] args)
         {
-            // todo this is expensive maybe parse in args and base it on type name so only activates CsvBankImporterLib that we have a arg 
-            var container = GetContainer.GetMeContainer();
-            //    _importers = GetNonAbstractClassesOfTypes<CsvBankImporter>(container.Resolve<IFileWrapper>(), container.Resolve<ICsvSplitterAndStripper>()).ToArray();
-            _importers = GetNonAbstractClassesOfTypes<CsvBankImporter>(container).ToArray();
+            // with out auto fac
+            //  _importers = GetNonAbstractClassesOfTypes<CsvBankImporter>(new FileWrapper(), new CsvSplitterAndStripper()).ToArray();
+
+            // with auto fac
+            _importers = GetNonAbstractClassesOfTypes<CsvBankImporter>(GetContainer.GetMeContainer()).ToArray();
+
+
             decimal? lastmont = 0;
             var amounts = new List<decimal?>();
             foreach (var arg in args)
