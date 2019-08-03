@@ -14,15 +14,17 @@ namespace BankCsvImporter
     {
         private static CsvBankImporter[] _importers;
 
-        static void Main(string[] args)
+        static Program()
         {
             // with out auto fac
             //  _importers = GetNonAbstractClassesOfTypes<CsvBankImporter>(new FileWrapper(), new CsvSplitterAndStripper()).ToArray();
 
-            // with auto fac
+            // with out
             _importers = GetNonAbstractClassesOfTypes<CsvBankImporter>(GetContainer.GetMeContainer()).ToArray();
+        }
 
-
+        static void Main(string[] args)
+        {
             decimal? lastmont = 0;
             var amounts = new List<decimal?>();
             foreach (var arg in args)
