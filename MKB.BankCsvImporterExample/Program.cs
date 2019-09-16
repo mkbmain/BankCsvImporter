@@ -26,7 +26,6 @@ namespace MKB.BankCsvImporterExample
 
         static void Main(string[] args)
         {
-            args = new[] {@"D:\natwest"};
             decimal? lastmont = 0;
             var amounts = new List<decimal?>();
             foreach (var arg in args)

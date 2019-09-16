@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.BankCsvImporter", "MKB.BankCsvImporter\MKB.BankCsvImporter.csproj", "{C6DBB950-F079-469B-93CA-A7C8862E2C28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.BankCsvImporterExample", "MKB.BankCsvImporterExample\MKB.BankCsvImporterExample.csproj", "{C6DBB950-F079-469B-93CA-A7C8862E2C28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.CsvBankImporterCore", "MKB.CsvBankImporterCore\MKB.CsvBankImporterCore.csproj", "{BEA84495-EBD2-41D0-8FF9-9E1A1C9C868F}"
 EndProject
