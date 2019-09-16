@@ -1,8 +1,8 @@
 using Autofac;
 
-namespace BankCsvImporter.IoC
+namespace MKB.BankCsvImporterExample.IoC
 {
-    public class GetContainer
+    public static class GetContainer
     {
         public static IContainer GetMeContainer()
         {

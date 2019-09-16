@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using Autofac;
-using BankCsvImporter.IoC;
-using CsvBankImporterLib;
-using CsvBankImporterLib.Models;
+using MKB.BankCsvImporterExample.IoC;
+using MKB.CsvBankImporterCore;
+using MKB.CsvBankImporterCore.Models;
 
-namespace BankCsvImporter
+namespace MKB.BankCsvImporterExample
 {
     // please note this is not a program more a actual test of what you can do as in get rows back show break down etc you could then put in db etc
     // hence why its not tested 
-    class Program
+    static class Program
     {
         private static CsvBankImporter[] _importers;
 
@@ -26,12 +26,13 @@ namespace BankCsvImporter
 
         static void Main(string[] args)
         {
+            args = new[] {@"D:\natwest"};
             decimal? lastmont = 0;
             var amounts = new List<decimal?>();
             foreach (var arg in args)
             {
                 Console.WriteLine(arg);
-                var importer = _importers.FirstOrDefault(x => arg.Contains(x.PathICanSupport)); // todo fiddly could be problematic over time
+                var importer = _importers.FirstOrDefault(x => arg.ToLower().Contains(x.PathICanSupport)); // todo fiddly could be problematic over time
                 var items = new List<StandardBankOutputModel>();
                 foreach (var file in System.IO.Directory.GetFiles(arg))
                 {

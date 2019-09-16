@@ -1,4 +1,4 @@
-namespace CsvBankImporterLib.Models
+namespace MKB.CsvBankImporterCore.Models
 {
     public class NatwestBankImportModel : StandardBankOutputModel
     {

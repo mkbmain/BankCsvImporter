@@ -2,6 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>MKB.CsvBankImporterCore</AssemblyName>
+        <RootNamespace>MKB.CsvBankImporterCore</RootNamespace>
     </PropertyGroup>
 
 </Project>

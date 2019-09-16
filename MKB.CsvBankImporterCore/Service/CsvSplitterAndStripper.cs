@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CsvBankImporterLib.Service
+namespace MKB.CsvBankImporterCore.Service
 {
     public class CsvSplitterAndStripper : ICsvSplitterAndStripper
     {
@@ -25,6 +25,7 @@ namespace CsvBankImporterLib.Service
                     {
                         continue; // skip these as there commas inside " meaning there not seperators
                     }
+
                     part.Add(stringBuilder.ToString());
                     stringBuilder.Clear();
                     continue;

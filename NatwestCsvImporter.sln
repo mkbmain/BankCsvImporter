@@ -1,10 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankCsvImporter", "BankCsvImporter\BankCsvImporter.csproj", "{C6DBB950-F079-469B-93CA-A7C8862E2C28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.BankCsvImporter", "MKB.BankCsvImporter\MKB.BankCsvImporter.csproj", "{C6DBB950-F079-469B-93CA-A7C8862E2C28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvBankImporterLib", "CsvBankImporterLib\CsvBankImporterLib.csproj", "{BEA84495-EBD2-41D0-8FF9-9E1A1C9C868F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.CsvBankImporterCore", "MKB.CsvBankImporterCore\MKB.CsvBankImporterCore.csproj", "{BEA84495-EBD2-41D0-8FF9-9E1A1C9C868F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsvBankImporterLibTests", "CsvBankImporterLibTests\CsvBankImporterLibTests.csproj", "{FF7EC5E9-4D12-41DC-84D7-B063B8451127}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.CsvBankImporterLibTests", "MKB.CsvBankImporterLibTests\MKB.CsvBankImporterLibTests.csproj", "{FF7EC5E9-4D12-41DC-84D7-B063B8451127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.NatwestCsvBankImporter", "MKB.NatwestCsvBankImporter\MKB.NatwestCsvBankImporter.csproj", "{0AD9D161-56C1-4662-95D4-E1D5FF7C7716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MKB.NatwestCsvBankImporterTests", "MKB.NatwestCsvBankImporterTests\MKB.NatwestCsvBankImporterTests.csproj", "{32C03FE6-B624-4DCA-8E8F-9F12C22BF859}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +28,13 @@ Global
 		{FF7EC5E9-4D12-41DC-84D7-B063B8451127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF7EC5E9-4D12-41DC-84D7-B063B8451127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF7EC5E9-4D12-41DC-84D7-B063B8451127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD9D161-56C1-4662-95D4-E1D5FF7C7716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD9D161-56C1-4662-95D4-E1D5FF7C7716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD9D161-56C1-4662-95D4-E1D5FF7C7716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD9D161-56C1-4662-95D4-E1D5FF7C7716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32C03FE6-B624-4DCA-8E8F-9F12C22BF859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32C03FE6-B624-4DCA-8E8F-9F12C22BF859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32C03FE6-B624-4DCA-8E8F-9F12C22BF859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32C03FE6-B624-4DCA-8E8F-9F12C22BF859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

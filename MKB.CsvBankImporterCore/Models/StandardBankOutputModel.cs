@@ -1,6 +1,6 @@
 using System;
 
-namespace CsvBankImporterLib.Models
+namespace MKB.CsvBankImporterCore.Models
 {
     public class StandardBankOutputModel
     {
@@ -8,7 +8,7 @@ namespace CsvBankImporterLib.Models
         public DateTime TransactionDate { get; set; }
         public decimal? Balance { get; set; }
         public string Description { get; set; }
-        
+
         public bool TransactionIsCredit { get; set; }
     }
 }

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp2.0</TargetFramework>
+        <AssemblyName>MKB.BankCsvImporterExample</AssemblyName>
+        <RootNamespace>MKB.BankCsvImporterExample</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MKB.CsvBankImporterCore\MKB.CsvBankImporterCore.csproj"/>
+        <ProjectReference Include="..\MKB.NatwestCsvBankImporter\MKB.NatwestCsvBankImporter.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="4.9.3"/>
+    </ItemGroup>
+
+</Project>

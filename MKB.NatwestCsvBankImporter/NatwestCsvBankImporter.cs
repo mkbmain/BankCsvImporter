@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using CsvBankImporterLib.Models;
-using CsvBankImporterLib.Service;
-using CsvBankImporterLib.Wrappers;
+using MKB.CsvBankImporterCore;
+using MKB.CsvBankImporterCore.Models;
+using MKB.CsvBankImporterCore.Service;
+using MKB.CsvBankImporterCore.Wrappers;
 
-namespace CsvBankImporterLib
+namespace MKB.NatwestCsvBankImporter
 {
     public class NatwestCsvBankImporter : CsvBankImporter
     {

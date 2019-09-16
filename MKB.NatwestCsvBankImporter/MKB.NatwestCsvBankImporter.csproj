@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <AssemblyName>MKB.NatwestCsvBankImporter</AssemblyName>
+        <RootNamespace>MKB.NatwestCsvBankImporter</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MKB.CsvBankImporterCore\MKB.CsvBankImporterCore.csproj"/>
+    </ItemGroup>
+
+</Project>

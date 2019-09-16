@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using CsvBankImporterLib.Models;
+using MKB.CsvBankImporterCore.Models;
 
-namespace CsvBankImporterLib
+namespace MKB.CsvBankImporterCore
 {
     public interface ICsvBankImporter
     {

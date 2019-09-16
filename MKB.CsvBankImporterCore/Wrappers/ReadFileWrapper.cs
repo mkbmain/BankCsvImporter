@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CsvBankImporterLib.Wrappers
+namespace MKB.CsvBankImporterCore.Wrappers
 {
     // TODO INTEGRATION TESTS
     public class FileWrapper : IFileWrapper

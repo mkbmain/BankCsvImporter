@@ -1,19 +1,19 @@
 using System;
 using System.Collections.Generic;
-using CsvBankImporterLib.Models;
-using CsvBankImporterLib.Service;
-using CsvBankImporterLib.Wrappers;
+using MKB.CsvBankImporterCore.Models;
+using MKB.CsvBankImporterCore.Service;
+using MKB.CsvBankImporterCore.Wrappers;
 
-namespace CsvBankImporterLib
+namespace MKB.CsvBankImporterCore
 {
     public abstract class CsvBankImporter : ICsvBankImporter
     {
-        protected readonly IFileWrapper FileWrapper;
         protected readonly ICsvSplitterAndStripper CsvSplitterAndStripper;
+        protected readonly IFileWrapper FileWrapper;
 
         public string PathICanSupport = "NotImplemented";
 
-        public CsvBankImporter(IFileWrapper fileWrapper, ICsvSplitterAndStripper csvSplitterAndStripper)
+        protected CsvBankImporter(IFileWrapper fileWrapper, ICsvSplitterAndStripper csvSplitterAndStripper)
         {
             FileWrapper = fileWrapper;
             CsvSplitterAndStripper = csvSplitterAndStripper;

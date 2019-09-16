@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CsvBankImporterLib.Wrappers
+namespace MKB.CsvBankImporterCore.Wrappers
 {
     public interface IFileWrapper
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace CsvBankImporterLib.Service
+namespace MKB.CsvBankImporterCore.Service
 {
     public interface ICsvSplitterAndStripper
     {
